@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">SDUT HEALTHCARE</string>
+    <string name="openning_text">SDUT mobile app</string>
+    <string name="usrname">Username</string>
+    <string name="psword">Password</string>
+    <string name="rpsword">Retype Password</string>
+    <string name="register">Register</string>
+    <string name="signin">Sign In</string>
+    <string name="signup">Sign Up</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="confirmation_dialog_message">Are you sure you want to delete %1$s?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tests">
+                         1.Blood Test
+                         2.X-ray
+                         3.MRI
+                         4.ECG</string>
+
+
+</resources>

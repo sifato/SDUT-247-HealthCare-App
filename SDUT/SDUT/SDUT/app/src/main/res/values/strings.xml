@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SDUT Book Library</string>
+    <string name="openning_text">SDUT mobile app</string>
+    <string name="usrname">Username</string>
+    <string name="psword">Password</string>
+    <string name="rpsword">Retype Password</string>
+    <string name="register">Register</string>
+    <string name="signin">Sign In</string>
+    <string name="signup">Sign Up</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
+
+</resources>

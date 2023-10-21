@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/blue100"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/righteous"
+        android:gravity="center"
+        android:text="@string/register"
+        android:textSize="50dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/create_your_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/righteous"
+        android:gravity="center"
+        android:text="Creat your account"
+        android:textStyle="italic" />
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/create_your_account"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/righteous"
+
+        android:hint="@string/usrname" />
+
+
+    <RadioGroup
+        android:id="@+id/gender"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/username"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="0dp"
+
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/Male"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:checked="true"
+            android:drawableLeft="@drawable/baseline_male_24"
+            android:fontFamily="@font/righteous"
+            android:text="@string/male" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:drawableLeft="@drawable/baseline_female_24"
+            android:fontFamily="@font/righteous"
+            android:text="@string/female" />
+    </RadioGroup>
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/username"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/righteous"
+        android:hint="@string/psword" />
+
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/password"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/righteous"
+        android:hint="@string/rpsword" />
+
+
+    <TextView
+        android:id="@+id/policycmnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/repassword"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/righteous"
+        android:gravity="center"
+        android:text="By registering you are agreeing to our Terms of use and Privacy Policy "
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="350dp"
+        android:layout_height="63dp"
+        android:layout_below="@id/policycmnt"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/blueA20"
+        android:fontFamily="@font/righteous"
+        android:text="@string/register"
+        android:textColor="@color/blue100" />
+
+    <TextView
+        android:id="@+id/alhvacmnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnsignup"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/righteous"
+        android:gravity="center"
+        android:text="Already have an account?"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/btnsignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alhvacmnt"
+        android:fontFamily="@font/righteous"
+        android:gravity="center"
+        android:text="@string/signin"
+        android:textStyle="bold" />
+
+</RelativeLayout>
